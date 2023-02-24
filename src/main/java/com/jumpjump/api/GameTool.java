@@ -70,6 +70,10 @@ public class GameTool {
         return "C:\\Users\\admin\\Desktop\\img\\bfvServiceImg.jpg";
     }
 
+    /**
+     * 获取所以的服务器
+     * @return
+     */
     public List<BfvServers> getBfvServers() {
         String url = "https://api.gametools.network/bfv/servers/?name=BFV&region=all&platform=pc&limit=100&lang=zh-CN";
         String forObject = restTemplate.getForObject(url, String.class);

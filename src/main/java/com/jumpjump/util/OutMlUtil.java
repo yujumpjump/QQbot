@@ -13,10 +13,15 @@ import java.util.List;
 
 
 public class OutMlUtil {
+
+    /**
+     * 读取外部配置命令文件
+     * @return
+     */
     public static  List<OutMl> getNoticeInfoList(){
         File file = null;
         try {
-            file = ResourceUtils.getFile("classpath:static/OutMl.json");
+            file = ResourceUtils.getFile("C:\\Users\\admin\\Desktop\\img\\OutMl.json");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -29,4 +34,5 @@ public class OutMlUtil {
         List<OutMl> noticeInfoList = JSON.parseArray(json, OutMl.class);
         return noticeInfoList;
     }
+
 }

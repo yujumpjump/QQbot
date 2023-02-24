@@ -23,4 +23,8 @@ public class OutMl {
     private String N16;
     private String N17;
     private String N18;
+    private String FWQ;
+    private String GB;
+    private String JC;
+    private  String LK;
 }
